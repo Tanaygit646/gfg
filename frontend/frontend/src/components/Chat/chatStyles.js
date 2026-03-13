@@ -54,6 +54,7 @@ const chatStyles = {
   },
   chatInputRow: {
     display: "flex",
+    alignItems: "center",
     gap: 6,
     padding: "10px",
     borderTop: "1px solid #1e1e1e",
@@ -80,6 +81,37 @@ const chatStyles = {
     alignItems: "center",
     transition: "background 0.15s",
   },
+  uploadRow: {
+  padding: "0 10px 6px 10px",
+},
+uploadBtn: {
+  display: "flex",
+  alignItems: "center",
+  gap: 6,
+  background: "#1a1a1a",
+  border: "1px dashed #2a2a2a",
+  borderRadius: 6,
+  color: "#555",
+  fontSize: 11,
+  padding: "6px 10px",
+  cursor: "pointer",
+  width: "100%",
+  transition: "border-color 0.15s, color 0.15s",
+},
+plusBtn: {
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  width: 30,
+  height: 30,
+  background: "#1a1a1a",
+  border: "1px solid #2a2a2a",
+  borderRadius: "50%",
+  color: "#888",
+  cursor: "pointer",
+  flexShrink: 0,
+  transition: "border-color 0.15s, color 0.15s",
+},
 };
 
 export default chatStyles;

@@ -12,8 +12,7 @@ function App() {
   return (
     <div style={globalStyles.root}>
       {/* Left Sidebar */}
-      <Sidebar isOpen={sidebarOpen} onClose={() => setSidebarOpen(false)} />
-
+      <Sidebar isOpen={sidebarOpen} onClose={() => setSidebarOpen(false)} onOpen={() => setSidebarOpen(true)} />
       {/* Center: Header + Graph */}
       <div style={styles.main}>
         <Header sidebarOpen={sidebarOpen} onOpenSidebar={() => setSidebarOpen(true)} />
